@@ -53,6 +53,21 @@ public class MenuNaviguation : MonoBehaviour
         GameObject myEventSystem = GameObject.Find("EventSystem");
         myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
     }
+    public void OpenSoinsMenu()
+    {
+        _flyCamera.Toggle(false);
+        _isInFlyMode = false;
+        _background.SetActive(true);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+
+        _mainMenu.SetActive(false);
+        _inventoryMenu.SetActive(true);
+
+        GameObject myEventSystem = GameObject.Find("EventSystem");
+        myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+    }
 
     private void Update()
     {
