@@ -1,25 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public List<Item> _items;
+    public List<Item> _selectedItems;
     public List<InventorySlot> _slots;
-    public GameObject _inventorySlot;
+    public MenuNaviguation _menuNaviguation;
     public GameObject _content;
     public GameObject _bigObject;
     public Item _selectedItem;
 
 
-
-    public void DisplayInventory()
+    public void SubmitSelection()
     {
-        foreach (var item in _items)
+        _selectedItems = new List<Item>();
+        foreach (InventorySlot slot in _content.GetComponentsInChildren<InventorySlot>())
         {
-            Instantiate(_inventorySlot,Vector3.zero,Quaternion.identity,_content.transform);
+            if (slot._isSelected)
+            {
+                _selectedItems.Add(slot._item);
+            }
         }
+        if (_selectedItems.Count >= 1)
+        {
+
+            _menuNaviguation.OpenCartMenu();
+            foreach (Transform transform in GameObject.Find("Tools").transform)
+            {
+                transform.gameObject.SetActive(true);
+            }
+            foreach (Item tool in GameObject.Find("Tools").GetComponentsInChildren<Item>())
+            {
+
+                if (_selectedItems.Any(item => item._id == tool._id))
+                {
+                }
+                else
+                {
+                    tool.gameObject.SetActive(false);
+                }
+            }
+        }
+
+
     }
+
+
     public void UpdateBigObject(Item item)
     {
         foreach (Transform transform in _bigObject.transform)
@@ -27,6 +55,6 @@ public class Inventory : MonoBehaviour
             Destroy(transform.gameObject);
         }
         _selectedItem = item;
-        Instantiate(item._model,_bigObject.transform.position,Quaternion.identity,_bigObject.transform).layer = 5;
+        Instantiate(item._model, _bigObject.transform.position, Quaternion.identity, _bigObject.transform).layer = 5;
     }
 }

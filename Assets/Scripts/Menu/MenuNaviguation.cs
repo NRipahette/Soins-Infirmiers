@@ -11,15 +11,18 @@ public class MenuNaviguation : MonoBehaviour
 {
 
     bool _isInFlyMode;
+    bool _isInDemoMode;
     public GameObject _background;
     public GameObject _mainMenu;
     public GameObject _inventoryMenu;
+    public GameObject _cartMenu;
     public FreeFlyCamera _flyCamera;
     // Start is called before the first frame update
     void Start()
     {
         _mainMenu.SetActive( true);
         _inventoryMenu.SetActive( false);
+        _cartMenu.SetActive( false);
         _background.SetActive( true);
         _flyCamera.Toggle(false);
     }
@@ -29,9 +32,11 @@ public class MenuNaviguation : MonoBehaviour
     {
         _mainMenu.SetActive( false);
         _inventoryMenu.SetActive( false);
+        _cartMenu.SetActive( false);
         _background.SetActive( false);
         _flyCamera.Toggle(true);
         _isInFlyMode = true;
+        _isInDemoMode = false;
         Cursor.visible = false;
         //IF Mouse & keyboard to gain focus
         MouseOperations.MouseEvent(MouseOperations.MouseEventFlags.LeftDown);
@@ -41,7 +46,8 @@ public class MenuNaviguation : MonoBehaviour
     public void OpenMainMenu()
     {
         _flyCamera.Toggle(false);
-        _isInFlyMode = false;
+        _isInFlyMode = false;        
+        _isInDemoMode = false;
         _background.SetActive(true);
 
         Cursor.visible = true;
@@ -49,14 +55,18 @@ public class MenuNaviguation : MonoBehaviour
 
         _mainMenu.SetActive(true);
         _inventoryMenu.SetActive(false);
+        _cartMenu.SetActive( false);
+
 
         GameObject myEventSystem = GameObject.Find("EventSystem");
         myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+        
     }
     public void OpenSoinsMenu()
     {
         _flyCamera.Toggle(false);
-        _isInFlyMode = false;
+        _isInFlyMode = false;        
+        _isInDemoMode = false;
         _background.SetActive(true);
 
         Cursor.visible = true;
@@ -64,6 +74,27 @@ public class MenuNaviguation : MonoBehaviour
 
         _mainMenu.SetActive(false);
         _inventoryMenu.SetActive(true);
+        _cartMenu.SetActive( false);
+
+
+        GameObject myEventSystem = GameObject.Find("EventSystem");
+        myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+    }
+    public void OpenCartMenu()
+    {
+        
+
+        _flyCamera.Toggle(false);
+        _isInFlyMode = false;        
+        _isInDemoMode = true;
+        _background.SetActive(false);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;      
+
+        _mainMenu.SetActive(false);
+        _inventoryMenu.SetActive(false);
+        _cartMenu.SetActive( true);  
 
         GameObject myEventSystem = GameObject.Find("EventSystem");
         myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
@@ -71,7 +102,7 @@ public class MenuNaviguation : MonoBehaviour
 
     private void Update()
     {
-        if (!_isInFlyMode)
+        if (!_isInFlyMode && !_isInDemoMode)
         {
          //   return;
         }
