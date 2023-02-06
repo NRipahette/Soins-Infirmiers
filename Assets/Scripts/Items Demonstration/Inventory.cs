@@ -11,6 +11,8 @@ public class Inventory : MonoBehaviour
     public GameObject _content;
     public GameObject _bigObject;
     public Item _selectedItem;
+    public Demonstration _demonstration;
+
 
 
     public void SubmitSelection()
@@ -43,6 +45,8 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
+
+        _demonstration.SetupDemo();
 
 
     }
