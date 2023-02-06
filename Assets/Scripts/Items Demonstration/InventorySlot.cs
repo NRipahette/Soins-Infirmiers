@@ -18,20 +18,23 @@ public class InventorySlot : MonoBehaviour
     public Sprite _selectedSprite;
     public Sprite _unselectedSprite;
 
-    private void Awake() {
+    private void Awake()
+    {
         SetupSlot();
     }
     public void InstantiateModel()
     {
-        Instantiate(_item._model,_modelInSlot.transform.position,Quaternion.identity,_modelInSlot.transform).layer = 5;
+        GameObject model = Instantiate(_item._model, _modelInSlot.transform.position, Quaternion.identity, _modelInSlot.transform);
+        model.layer = 5;
+        model.transform.LookAt(model.transform.position + model.transform.parent.forward, model.transform.parent.up);
     }
-   
+
 
     public void ToggleSelection()
     {
         _isSelected = !_isSelected;
 
-        if(_isSelected)
+        if (_isSelected)
         {
             _selectedIndicator.sprite = _selectedSprite;
         }
@@ -44,12 +47,27 @@ public class InventorySlot : MonoBehaviour
     public void SetupSlot()
     {
         //_modelInSlot = _item._model;
-        _TextInSlot.text = _item._name;      
-        InstantiateModel(); 
-    }
-    public void UpdateBigObject()
-    {
-        GameObject.Find("InventoryMenu").GetComponent<Inventory>().UpdateBigObject(_item);
+        _TextInSlot.text = _item._name;
+        InstantiateModel();
+        ApplyMaskToChildrens();
     }
 
+    public void UpdateBigObject()
+    {
+        GameObject.Find("InventoryMenu").GetComponent<Inventory>().UpdateBigObject(_item, _modelInSlot.transform.parent);
+    }
+
+    void ApplyMaskToChildrens()
+    {
+        MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();
+        foreach (MeshRenderer renderer in renderers)
+        {
+            renderer.gameObject.layer = 5;
+            foreach (var item in  renderer.materials)
+            {
+                item.renderQueue = 3002;
+            }
+            
+        }
+    }
 }

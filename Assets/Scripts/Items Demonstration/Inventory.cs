@@ -48,13 +48,16 @@ public class Inventory : MonoBehaviour
     }
 
 
-    public void UpdateBigObject(Item item)
+    public void UpdateBigObject(Item item, Transform parentTransform)
     {
         foreach (Transform transform in _bigObject.transform)
         {
             Destroy(transform.gameObject);
         }
         _selectedItem = item;
-        Instantiate(item._model, _bigObject.transform.position, Quaternion.identity, _bigObject.transform).layer = 5;
+        GameObject model = Instantiate(item._model, _bigObject.transform.position, item._model.transform.rotation, _bigObject.transform);
+        model.layer = 5;
+        model.transform.LookAt(model.transform.position +parentTransform.forward,parentTransform.up);
+        //model.transform.localScale =  parentTransform.localScale;
     }
 }
