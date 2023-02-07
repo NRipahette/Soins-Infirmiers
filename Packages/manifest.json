@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.soupday.cc3_unity_tools": "file:C:/Users/eagle/Desktop/Character_Creator_and_iClone_Auto_Setup_1.4.3_for_Unity_HDRP12",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "1.15.16",
     "com.unity.feature.development": "1.0.1",
