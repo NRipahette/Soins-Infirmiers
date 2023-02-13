@@ -16,6 +16,7 @@ public class MenuNaviguation : MonoBehaviour
     public GameObject _mainMenu;
     public GameObject _inventoryMenu;
     public GameObject _cartMenu;
+    public Demonstration _demonstration;
     public FreeFlyCamera _flyCamera;
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,8 @@ public class MenuNaviguation : MonoBehaviour
     
     public void OpenMainMenu()
     {
+        if(!_demonstration._isShowingAnim)
+        {
         _flyCamera.Toggle(false);
         _isInFlyMode = false;        
         _isInDemoMode = false;
@@ -60,7 +63,9 @@ public class MenuNaviguation : MonoBehaviour
 
         GameObject myEventSystem = GameObject.Find("EventSystem");
         myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+        }
         
+    
     }
     public void OpenSoinsMenu()
     {
