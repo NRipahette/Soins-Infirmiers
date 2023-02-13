@@ -11,5 +11,6 @@ public class Item : MonoBehaviour
     public string _name;
     public string _description;
     public GameObject _model;
+    public string _animationTrigger;
 
 }

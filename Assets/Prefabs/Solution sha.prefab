@@ -47,8 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 1
-  _name: Solution sha
-  _description: Solution shaSolution shaSolution shaSolution shaSolution sha
+  _name: Solution SHA
+  _description: "- Solution antiseptique cutan\xE9e, c\u2019est \xE0 dire qui est
+    exclusivement r\xE9serv\xE9 \xE0 la peau. Elle est employ\xE9e afin d\u2019assurer
+    l\u2019hygi\xE8ne des mains, notamment lors de soins m\xE9dicaux. Elle agit par
+    contact direct et m\xE9canique (en friction) et s\u2019utilise sans eau."
   _model: {fileID: 7206208606026931512}
 --- !u!65 &4691739923821809733
 BoxCollider:

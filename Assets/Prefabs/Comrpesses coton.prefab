@@ -48,8 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 5
   _name: Compresses coton
-  _description: Compresses cotonCompresses cotonCompresses cotonCompresses cotonCompresses
-    cotonCompresses coton
+  _description: "- Imbib\xE9es d'alcool, 3 passages - Aseptiser la peau et bien laisser
+    s\xE9cher l\u2019antiseptique \xE0 l\u2019air libre (30 secondes). Les r\xE9sidus
+    d\u2019alcool peuvent h\xE9molyser et/ou contaminer les \xE9chantillons de sang
+    et fausser le r\xE9sultat."
   _model: {fileID: 2409087044805252461}
 --- !u!65 &6408893282500771855
 BoxCollider:

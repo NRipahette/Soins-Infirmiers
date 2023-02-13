@@ -7,8 +7,10 @@ public class Demonstration : MonoBehaviour
 {
     bool _isInDemo;
     public Transform _cameraPosition;
+    public Transform _cameraAnimation;
     public TextMeshProUGUI _nameUI;
     public TextMeshProUGUI _descriptionUI;
+    public Animator _animatorInfirmier;
 
     private void Update() {
         if(_isInDemo)
@@ -22,7 +24,8 @@ public class Demonstration : MonoBehaviour
             }
             if (Physics.Raycast(ray, out hit, 50,~LayerMask.NameToLayer("Tool")) && Input.GetMouseButtonDown(0))
             {
-                //Lancer l'animation
+                SetupCameraForAnimation();
+                _animatorInfirmier.SetTrigger(hit.transform.GetComponentInChildren<Item>()._animationTrigger);
             }
         }
     }
@@ -36,5 +39,13 @@ public class Demonstration : MonoBehaviour
     public void SetupCamera() {
             Camera.main.transform.position = _cameraPosition.position;
             Camera.main.transform.rotation = _cameraPosition.rotation;
+    }
+    public void ReturnToMainState() {
+            SetupCamera();
+
+    }
+    public void SetupCameraForAnimation() {
+            Camera.main.transform.position = _cameraAnimation.position;
+            Camera.main.transform.rotation = _cameraAnimation.rotation;
     }
 }

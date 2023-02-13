@@ -48,10 +48,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 9
   _name: "Aiguille de pr\xE9l\xE8vement"
-  _description: "Aiguille de pr\xE9l\xE8vementAiguille de pr\xE9l\xE8vementAiguille
-    de pr\xE9l\xE8vementAiguille de pr\xE9l\xE8vementAiguille de pr\xE9l\xE8vementAiguille
-    de pr\xE9l\xE8vementAiguille de pr\xE9l\xE8vementAiguille de pr\xE9l\xE8vement"
+  _description: "- L'unit\xE9 est dot\xE9e d'un syst\xE8me de protection qui permet
+    de r\xE9duire les risques de piq\xFBres et d'AES (Accident Exposition au Sang).
+    Un m\xE9canisme, qui s'actionne d'une seule main, d\xE9clenche la r\xE9tractation
+    de l'aiguille et son verrouillage irr\xE9versible. Ce verrouillage est confirm\xE9
+    par un clic sonore."
   _model: {fileID: 3156313815796369784}
+  _animationTrigger: TestTrigger
 --- !u!65 &3484745362918191309
 BoxCollider:
   m_ObjectHideFlags: 0

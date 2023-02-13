@@ -47,9 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 2
-  _name: Solution Alcoolique
-  _description: Solution AlcooliqueSolution AlcooliqueSolution AlcooliqueSolution
-    AlcooliqueSolution AlcooliqueSolution AlcooliqueSolution AlcooliqueSolution Alcoolique
+  _name: Alcool
+  _description: "- L\u2019antisepsie consiste \xE0 neutraliser les micro-organismes
+    pr\xE9sents sur une zone de peau ou de muqueuse, qu\u2019elle soit saine ou l\xE9s\xE9e"
   _model: {fileID: 10472044535748283}
 --- !u!65 &3222287107354815135
 BoxCollider:

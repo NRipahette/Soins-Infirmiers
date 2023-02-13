@@ -47,9 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 6
-  _name: "Carr\xE9 bleu"
-  _description: "Carr\xE9 bleuCarr\xE9 bleuCarr\xE9 bleuCarr\xE9 bleuCarr\xE9 bleuCarr\xE9
-    bleuCarr\xE9 bleuCarr\xE9 bleu"
+  _name: "Carr\xE9s bleus"
+  _description: "- Support de protection en d'\xE9coulement de liquides biologiques"
   _model: {fileID: 2861871948330739053}
 --- !u!65 &6865786359349808124
 BoxCollider:

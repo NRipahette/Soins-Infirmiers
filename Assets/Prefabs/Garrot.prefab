@@ -48,7 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 4
   _name: Garrot
-  _description: Garrot Garrot Garrot Garrot Garrot Garrot Garrot Garrot Garrot Garrot
+  _description: "- Garrot tourniquet \xE0 lib\xE9ration rapide et lente. A savoir,
+    vous pouvez tr\xE8s bien utiliser le scope et son brassard en mode prise de sang."
   _model: {fileID: 1296924458258639037}
 --- !u!65 &8428263435426544641
 BoxCollider:

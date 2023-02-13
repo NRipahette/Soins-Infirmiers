@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 3
   _name: Plateau de soins
-  _description: Plateau de soins Plateau de soins Plateau de soins Plateau de soins
+  _description: 
   _model: {fileID: 1648810888472668584}
 --- !u!65 &8472842539521877791
 BoxCollider:

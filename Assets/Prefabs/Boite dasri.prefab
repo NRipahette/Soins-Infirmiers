@@ -47,9 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _id: 8
-  _name: Boite Dasri
-  _description: Boite DasriBoite DasriBoite DasriBoite DasriBoite DasriBoite DasriBoite
-    Dasri
+  _name: Boite-Dasri
+  _description: "- Les d\xE9chets d'activit\xE9s de soins \xE0 risques infectieux
+    (DASRI) sont les d\xE9chets issus des activit\xE9s de diagnostic, de suivi et
+    de traitement pr\xE9ventif, curatif ou palliatif, dans les domaines de la m\xE9decine
+    humaine."
   _model: {fileID: 6292016641154384297}
 --- !u!65 &2825301523646922152
 BoxCollider:

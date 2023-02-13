@@ -48,10 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 0
   _name: "Tubes de pr\xE9l\xE8vement"
-  _description: "Tubes de pr\xE9l\xE8vementTubes de pr\xE9l\xE8vementTubes de pr\xE9l\xE8vementTubes
-    de pr\xE9l\xE8vementTubes de pr\xE9l\xE8vementTubes de pr\xE9l\xE8vementTubes
-    de pr\xE9l\xE8vementTubes de pr\xE9l\xE8vementTubes de pr\xE9l\xE8vementTubes
-    de pr\xE9l\xE8vement"
+  _description: "- Ordre, rouge, bleu, violet, vert, jaune, noir, gris - Identifications
+    de tous les tubes - M\xE9langer imm\xE9diatement par 4 \xE0 8 retournements lents
+    les tubes pr\xE9lev\xE9s contenant des anticoagulants. Sinon risque de coagulation
+    compl\xE8te ou micro caillots difficiles \xE0 d\xE9tecter."
   _model: {fileID: 5797174262406848652}
 --- !u!65 &8719930763685781789
 BoxCollider:

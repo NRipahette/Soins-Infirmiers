@@ -48,7 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 7
   _name: Boite hypafix
-  _description: Boite hypafixBoite hypafixBoite hypafixBoite hypafixBoite hypafix
+  _description: "- Film adh\xE9sif blanc Hypafix 10 m x 6 cm. D\xE9coupe facile (quadrillage).
+    Tr\xE8s bonne tenue, id\xE9al pour les peaux sensibles. Radio-transparent."
   _model: {fileID: 8031247640240536360}
 --- !u!65 &6347895768182076093
 BoxCollider:
