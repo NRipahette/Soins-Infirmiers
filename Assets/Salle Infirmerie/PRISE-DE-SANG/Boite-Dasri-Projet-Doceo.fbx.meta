@@ -3,7 +3,17 @@ guid: 47eae2575a1762948aa01860fb2ebcc4
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DASRI-Jaune
+    second: {fileID: 2100000, guid: f4d9f52e1e0424541b90ef6d4d5c5ac2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DASRI-Rouge
+    second: {fileID: 2100000, guid: f2a0bc2190d888241980fafeea789e22, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

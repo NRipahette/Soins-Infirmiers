@@ -3,7 +3,12 @@ guid: df0f013c4ac2cfe44a021f5a3f97d404
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastique-Petit-Plateau
+    second: {fileID: 2100000, guid: 6e6c364100a6e1047940a4eabeb52e85, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

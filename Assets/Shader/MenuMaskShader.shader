@@ -1,13 +1,10 @@
 Shader "Custom/MenuMaskShader"
 {
-    SubShader
-    {
-        Tags{
-            "Queue" = "Transparent+1"
-        }
-
-        Pass{
-            Blend Zero One
-        }
+    SubShader {
+    // draw after all opaque objects (queue = 2001):
+    Tags { "Queue"="Geometry+1" }
+    Pass {
+      Blend Zero One // keep the image be$$anonymous$$nd it
     }
+  } 
 }

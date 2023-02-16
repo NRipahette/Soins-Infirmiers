@@ -3,7 +3,12 @@ guid: 2f215eb994e45e248bb83975605afc25
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Feuille-De-Soins
+    second: {fileID: 2100000, guid: 12b6a6e3d8134534489d3576e14b2488, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

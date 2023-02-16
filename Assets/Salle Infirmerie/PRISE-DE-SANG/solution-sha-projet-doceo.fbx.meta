@@ -3,7 +3,12 @@ guid: 39921eba49498f4448a7a996d9bcb4ce
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Solution-SHA-Decoration
+    second: {fileID: 2100000, guid: 042c6c46db85aca40b74d2e3ee69f071, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

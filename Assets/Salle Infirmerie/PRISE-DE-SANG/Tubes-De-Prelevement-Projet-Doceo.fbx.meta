@@ -3,7 +3,57 @@ guid: 4d45b93ea0ba782488b85a65d4712d67
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E_Tube_Label_Bleu
+    second: {fileID: 2100000, guid: 52eeadbec55e6cd45a29df8b92ed7c1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E_Tube_Label_Rouge
+    second: {fileID: 2100000, guid: 0e1de4679d7c2d845a62fe146f68f243, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: E_Tube_Label_Vert
+    second: {fileID: 2100000, guid: 580b8c120f27ba24c90bc0803e2dff49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic transp
+    second: {fileID: 2100000, guid: e54662a189633bc4d8d3cfe79f7fc52d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Cap_Bleu
+    second: {fileID: 2100000, guid: 647fe06738df395438577c362dbe6ef6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Cap_Gris
+    second: {fileID: 2100000, guid: c7cbe15f9a41a4641b30dd4f07783bb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Cap_Rouge
+    second: {fileID: 2100000, guid: 79c01d33a1acf804d8ca736c185ef2ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Cap_Vert
+    second: {fileID: 2100000, guid: 7b6428837b143ca45be9d3d46bfa0ab6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tube_Glass
+    second: {fileID: 2100000, guid: 3400a41aa0cc9a747923fe6930d5c4e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White plastic
+    second: {fileID: 2100000, guid: 8696d57897fca5a4f9bbc983e4ff13f9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

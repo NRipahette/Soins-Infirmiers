@@ -3,7 +3,17 @@ guid: 13fc2c86688d9e740887c85e14f9892b
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garrot-Texture-Blanc
+    second: {fileID: 2100000, guid: 6288ed393a016214ab54b82b4802a969, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Garrot-Texture-Vert-Clair
+    second: {fileID: 2100000, guid: f2a9da49c7370b94ca305d4d5c04d94b, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

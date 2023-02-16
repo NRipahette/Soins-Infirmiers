@@ -79,6 +79,10 @@ public class MenuNaviguation : MonoBehaviour
 
         _mainMenu.SetActive(false);
         _inventoryMenu.SetActive(true);
+        foreach(InventorySlot slot in _inventoryMenu.GetComponentsInChildren<InventorySlot>())
+        {
+            slot.SetupSlot();
+        }
         _cartMenu.SetActive( false);
 
 

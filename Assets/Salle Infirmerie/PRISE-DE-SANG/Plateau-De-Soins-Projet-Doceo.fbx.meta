@@ -3,7 +3,12 @@ guid: d951064ba165b174197bd883c4f5186c
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plateau-Texture
+    second: {fileID: 2100000, guid: 93ce21676de6ca44386a4a1dcc237731, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

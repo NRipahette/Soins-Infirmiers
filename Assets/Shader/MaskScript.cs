@@ -10,7 +10,7 @@ public class MaskScript : MonoBehaviour
           MeshRenderer[] renderers =   GetComponentsInChildren<MeshRenderer>();
             foreach (MeshRenderer renderer in renderers)
             {
-                renderer.material.renderQueue = 3002;
+                renderer.material.renderQueue = 2002;
             }
     }
     
