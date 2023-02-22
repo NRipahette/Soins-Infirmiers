@@ -54,7 +54,7 @@ MonoBehaviour:
     de l'aiguille et son verrouillage irr\xE9versible. Ce verrouillage est confirm\xE9
     par un clic sonore."
   _model: {fileID: 3156313815796369784}
-  _animationTrigger: TestTrigger
+  _animationTrigger: Aiguille
 --- !u!65 &3484745362918191309
 BoxCollider:
   m_ObjectHideFlags: 0

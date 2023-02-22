@@ -53,7 +53,7 @@ MonoBehaviour:
     d\u2019alcool peuvent h\xE9molyser et/ou contaminer les \xE9chantillons de sang
     et fausser le r\xE9sultat."
   _model: {fileID: 2409087044805252461}
-  _animationTrigger: TestTrigger
+  _animationTrigger: 
 --- !u!65 &6408893282500771855
 BoxCollider:
   m_ObjectHideFlags: 0

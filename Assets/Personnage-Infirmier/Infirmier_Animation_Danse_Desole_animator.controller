@@ -61,7 +61,7 @@ AnimatorController:
   m_Name: Infirmier_Animation_Danse_Desole_animator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: TestTrigger
+  - m_Name: Aiguille
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -116,7 +116,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: TestTrigger
+    m_ConditionEvent: Aiguille
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6377677994514516164}
